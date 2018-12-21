@@ -1,0 +1,987 @@
+{
+  "front-version": "2.19.1",
+  "version": 3,
+  "nodes": [
+    {
+      "type": "Project",
+      "description": "",
+      "id": "d0433cfa-4372-4e14-9d9a-3c8ac38a4122",
+      "lastModified": "2018-12-18T21:57:10.815+08:00",
+      "name": "newshub"
+    },
+    {
+      "type": "Service",
+      "id": "294b7430-209e-4b2c-8b58-5a1627546aa5",
+      "lastModified": "2018-12-08T17:27:36.501+08:00",
+      "name": "manage",
+      "parentId": "d0433cfa-4372-4e14-9d9a-3c8ac38a4122"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "newsid",
+              "value": "258"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "commentcontent",
+              "value": "test"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/add_comment.do"
+      },
+      "id": "f9cf1a54-927e-4aaa-afe9-6ea1cce78a58",
+      "lastModified": "2018-12-10T14:43:37.267+08:00",
+      "name": "add_comment.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "newstitle",
+              "value": "test"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/add_news.do"
+      },
+      "id": "64864679-ea3e-4948-b061-359030bef47d",
+      "lastModified": "2018-12-10T14:05:03.438+08:00",
+      "name": "add_news.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "user3"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "123456"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "usertype",
+              "value": "user"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/add_user.do"
+      },
+      "id": "02ae669d-3b7d-4edd-abed-a98dbfc649f8",
+      "lastModified": "2018-12-08T19:47:02.672+08:00",
+      "name": "add_user.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "commentcontent",
+              "value": "test_1"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "newsid",
+              "value": "258"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/change_comment.do"
+      },
+      "id": "62805d6c-bd49-47ad-b766-af1285717537",
+      "lastModified": "2018-12-10T14:45:58.682+08:00",
+      "name": "change_comment.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "157"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "newstitle",
+              "value": "云南省"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/change_news.do"
+      },
+      "id": "24daf613-17af-48bb-aa25-dc6cf70a5333",
+      "lastModified": "2018-12-10T14:03:22.211+08:00",
+      "name": "change_news.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "8"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "user2"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "123456"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/change_user.do"
+      },
+      "id": "10ca4f6f-daa3-4c8a-83a1-81f59a7bdc2b",
+      "lastModified": "2018-12-08T20:04:38.354+08:00",
+      "name": "change_user.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/delete_comment.do"
+      },
+      "id": "f13fb617-c170-4ba5-8460-41ff88cdc625",
+      "lastModified": "2018-12-10T14:46:44.457+08:00",
+      "name": "delete_comment.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "157"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/delete_news.do"
+      },
+      "id": "8f8a8c2e-9d8d-41c9-849e-11ff6344a2fd",
+      "lastModified": "2018-12-10T14:04:24.169+08:00",
+      "name": "delete_news.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "9"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/delete_user.do"
+      },
+      "id": "e708e953-18c6-41b9-a960-13629f5e66d8",
+      "lastModified": "2018-12-10T15:13:53.137+08:00",
+      "name": "delete_user.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/get_comment.do"
+      },
+      "id": "77a59168-34e8-4963-8356-e600cce1b3cf",
+      "lastModified": "2018-12-10T14:41:23.190+08:00",
+      "name": "get_comment.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/get_news.do"
+      },
+      "id": "fca691dd-0a3d-4357-827d-e16808f54a8b",
+      "lastModified": "2018-12-10T14:01:19.254+08:00",
+      "name": "get_news.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": []
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/manage/get_user.do"
+      },
+      "id": "12e1473f-de75-4491-a983-6819f3b638de",
+      "lastModified": "2018-12-08T19:44:17.104+08:00",
+      "name": "get_user.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "294b7430-209e-4b2c-8b58-5a1627546aa5"
+    },
+    {
+      "type": "Service",
+      "id": "38bb1208-582e-4540-90e4-1c1a0c594bd4",
+      "lastModified": "2018-12-11T15:51:18.821+08:00",
+      "name": "news",
+      "parentId": "d0433cfa-4372-4e14-9d9a-3c8ac38a4122"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "newsId",
+              "value": "1194"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/news/get_detail_news.do"
+      },
+      "id": "b4e93926-5976-4af6-8916-61f6256cdb3c",
+      "lastModified": "2018-12-16T23:58:17.788+08:00",
+      "name": "get_detail_news.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "38bb1208-582e-4540-90e4-1c1a0c594bd4"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "type": "Text",
+              "name": "pageNum",
+              "value": "5"
+            },
+            {
+              "type": "Text",
+              "name": "pageSize",
+              "value": "10"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/news/get_recommend_title.do"
+      },
+      "id": "11b378e7-8d11-48f6-bbb1-12647baf8f06",
+      "lastModified": "2018-12-14T17:31:55.223+08:00",
+      "name": "get_recommend_title.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "38bb1208-582e-4540-90e4-1c1a0c594bd4"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "label",
+              "value": "7"
+            },
+            {
+              "type": "Text",
+              "name": "pageNum",
+              "value": "2"
+            },
+            {
+              "type": "Text",
+              "name": "pageSize",
+              "value": "10"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/news/get_title_list.do"
+      },
+      "id": "9a6c5821-8386-4ce0-8f44-335a7fdc1bc9",
+      "lastModified": "2018-12-16T23:50:52.228+08:00",
+      "name": "get_title_list.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "38bb1208-582e-4540-90e4-1c1a0c594bd4"
+    },
+    {
+      "type": "Service",
+      "id": "3df3460f-4853-44f8-b59d-f9222555972d",
+      "lastModified": "2018-12-08T13:00:06.995+08:00",
+      "name": "user",
+      "parentId": "d0433cfa-4372-4e14-9d9a-3c8ac38a4122"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "id",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "wait"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "wait"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/user/change_password.do"
+      },
+      "id": "f3ccf591-5f78-4fb7-bbbe-bfcd7a578d52",
+      "lastModified": "2018-12-17T00:13:50.200+08:00",
+      "name": "change_password.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "3df3460f-4853-44f8-b59d-f9222555972d"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "wait"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "123"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/user/login.do"
+      },
+      "id": "ceb49883-23ef-4362-a819-67e49f7e5e3c",
+      "lastModified": "2018-12-18T21:57:10.815+08:00",
+      "name": "login.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "3df3460f-4853-44f8-b59d-f9222555972d"
+    },
+    {
+      "type": "Request",
+      "method": {
+        "requestBody": true,
+        "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+        "name": "POST"
+      },
+      "body": {
+        "formBody": {
+          "overrideContentType": true,
+          "encoding": "application/x-www-form-urlencoded",
+          "items": [
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "username",
+              "value": "user2"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "password",
+              "value": "123456"
+            },
+            {
+              "enabled": true,
+              "type": "Text",
+              "name": "usertype",
+              "value": "user"
+            }
+          ]
+        },
+        "bodyType": "Form"
+      },
+      "uri": {
+        "query": {
+          "delimiter": "&",
+          "items": []
+        },
+        "scheme": {
+          "name": "http",
+          "version": "V11"
+        },
+        "host": "localhost:8080",
+        "path": "/newshub/user/register.do"
+      },
+      "id": "90a5285f-8bd8-4087-b350-31153c560d33",
+      "lastModified": "2018-12-08T14:51:42.918+08:00",
+      "name": "register.do",
+      "headers": [
+        {
+          "enabled": true,
+          "name": "Content-Type",
+          "value": "application/x-www-form-urlencoded"
+        }
+      ],
+      "metaInfo": {
+        "ownerId": "auth0|5c0fab1cf3e16d76e51d8c40"
+      },
+      "parentId": "3df3460f-4853-44f8-b59d-f9222555972d"
+    }
+  ]
+}
